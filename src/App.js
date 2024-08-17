@@ -1,14 +1,22 @@
-
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+// import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+      <Router>
+        <Navbar/>
         
-        <h1>Y</h1>
-      </header>
-    </div>
+        <Routes>
+          <Route path='/' exact/>
+        </Routes>
+      </Router>
+    </>
+     
+    
   );
 }
 
